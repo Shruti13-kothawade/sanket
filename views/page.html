@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healthcare Match Form</title>
@@ -61,9 +66,8 @@
     </style>
   </head>
   <body>
-    <h2>Healthcare Match Form</h2>
-
-    <div class="form-container" id="userTypeForm">
+    <div class="main">
+    <div  class="form-container" id="userTypeForm">
       <h3>Are you a patient or a hospital?</h3>
       <form id="userTypeWorkflow" onsubmit="submitUserTypeForm(event)">
         <label for="userType">Select User Type:</label>
@@ -125,7 +129,7 @@
       <h3>Matches:</h3>
       <pre id="matchesOutput"></pre>
     </div>
-
+  </div>
     <script>
       function submitUserTypeForm(event) {
         event.preventDefault();
